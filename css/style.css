@@ -1,12 +1,17 @@
-/* #general-cnt {
-    
-} */
+#general-cnt {
+    /* padding-top: 20px; */
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    background-color: rgb(127, 255, 212);
+}
 
 .quadrato {
-    height: calc(100% / 10);
+    height: 50px;
     width: calc(100% / 10);
     border: solid 1px;
     display: flex;
-    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 
 }

@@ -40,4 +40,12 @@ function SquareSpawn(celNum, colNum) {
     //cellaEl.style.height = `calc(100% / ${colNum})`;
     cellaEl.classList.add('quadrato');
     contEl.append(cellaEl);
+
+    cellaEl.addEventListener('click', function() {
+        cellaEl.style.backgroundColor = "blue";
+        //adesso voglio dire che ad essere stampato su console il numero della casella cliccata, come lo traduco nel linguaggio js?
+        //test 
+        console.log(i);
+        //test
+    });
 }
