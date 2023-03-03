@@ -1,0 +1,12 @@
+/* #general-cnt {
+    
+} */
+
+.quadrato {
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+    border: solid 1px;
+    display: flex;
+    flex-flow: row wrap;
+
+}

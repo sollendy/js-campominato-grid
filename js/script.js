@@ -3,6 +3,7 @@
 //creo le variabili del contenitore e del bottone
 //creo le variabili del numero di celle nella griglia
 //creo gli elementi div uno alla volta in un ciclo for presi dalla funzione
+//creo l'evento clic per il bottone
 //creo la funzione in cui redigere le istruzioni da dare al click del bottone
 //--> nel click voglio che:
     //si crei un nuovo elemento che sarà un div
@@ -15,23 +16,28 @@ const contEl = document.getElementById('general-cnt');
 const btnEl = document.getElementById('grid-on');
 
 //creo le variabili del numero di celle nella griglia
-let celle = 100;
+let celle = 101;
 
 //creo gli elementi div uno alla volta in un ciclo for presi dalla funzione
-for (i = 0; i < celle; i++) {
- //creo la funzione in cui redigere le istruzioni da dare al click del bottone 
- //--> dopo aver creato la funzione la appccico qua in una variabile
-    let quadri = SquareSpawn;
-    
 
-}
+//creo l'evento clic per il bottone
+btnEl.addEventListener("click", function() {
+    for (i = 1; i < celle; i++) {
+     //creo la funzione in cui redigere le istruzioni da dare al click del bottone 
+     //--> dopo aver creato la funzione la appccico qua in una variabile
+        SquareSpawn(i, 10);
+    }
+});
 
-function SquareSpawn(text) {
+function SquareSpawn(celNum, colNum) {
     //--> nel click voglio che:
     //si crei un nuovo elemento che sarà un div
     //codesto elemento venga appeso nel contenitore generale
-    let newElement = document.createElement('div');
-    newElement.classList.add('square');
-    newElement.innerText = text;
-    return newElement;
+
+    let cellaEl = document.createElement('div');
+    cellaEl.innerText = celNum;
+    //cellaEl.style.width = `calc(100% / ${colNum})`;
+    //cellaEl.style.height = `calc(100% / ${colNum})`;
+    cellaEl.classList.add('quadrato');
+    contEl.append(cellaEl);
 }
