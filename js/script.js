@@ -7,3 +7,4 @@
     //si crei un nuovo elemento che sarà un div
     //codesto elemento venga appeso nel contenitore generale
 //creo gli elementi div uno alla volta in un ciclo for presi dalla funzione
+//do le ultime modifiche con CSS
