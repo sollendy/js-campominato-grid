@@ -21,8 +21,8 @@ let celle = 100;
 for (i = 0; i < celle; i++) {
  //creo la funzione in cui redigere le istruzioni da dare al click del bottone 
  //--> dopo aver creato la funzione la appccico qua in una variabile
-
-
+    let quadri = SquareSpawn;
+    
 
 }
 
